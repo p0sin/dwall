@@ -9,10 +9,19 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>dwall</title>
   </head>
   <body>
-    <slot />
+    <div class="mx-auto max-w-7xl px-4 py-12">
+      <slot />
+    </div>
   </body>
 </html>
 
