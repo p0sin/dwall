@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "dwall";
+    default: true; /* set as default */
+    prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: light; /* color of browser-provided UI */
+  
+    --color-base-100: #F3F3F3;
+    --color-base-conntent: #FFFFFF;
+    --color-primary-content: #FFFFFF;
+    --color-primary: #E14E39;
+  }
