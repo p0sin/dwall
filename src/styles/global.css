@@ -18,3 +18,10 @@
 #mobile-menu {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+
+@layer components {
+  .slide {
+    @apply w-full h-full flex items-center justify-center text-black;
+  }
+}

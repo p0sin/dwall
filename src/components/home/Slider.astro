@@ -1,0 +1,17 @@
+---
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
+---
+
+<section class="w-screen h-[820px]">
+  <swiper-container
+    class="mySwiper h-full w-full bg-neutral-400 items-center justify-center"
+    navigation="true"
+  >
+    <swiper-slide class="slide">Slide 1</swiper-slide>
+    <swiper-slide class="slide">Slide 2</swiper-slide>
+    <swiper-slide class="slide">Slide 3</swiper-slide>
+  </swiper-container>
+</section>
