@@ -1,5 +1,5 @@
 ---
-
+const currentPath = Astro.url.pathname;
 ---
 
 <section class="w-full mx-auto px-16 py-12">
@@ -26,11 +26,10 @@
     <div class="navbar-end hidden md:flex h-full">
       <!-- Altura completa -->
       <ul class="menu menu-lg menu-horizontal px-1 gap-2 items-end h-full">
-        <!-- Alineado al fondo -->
         <li>
           <a
             href="/"
-            class="text-primary font-medium hover:text-primary/80 transition-colors pb-1"
+            class={`pb-1 transition-colors ${currentPath === '/' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
             data-astro-prefetch="hover"
           >
             INICIO
@@ -39,7 +38,7 @@
         <li>
           <a
             href="/nosotros"
-            class="text-black hover:text-primary transition-colors pb-1"
+            class={`pb-1 transition-colors ${currentPath === '/nosotros' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
             data-astro-prefetch="hover"
           >
             NOSOTROS
@@ -48,23 +47,22 @@
         <li>
           <details>
             <summary
-              class="text-black hover:text-primary transition-colors pb-1"
+              class={`pb-1 transition-colors ${currentPath.startsWith('/colecciones') ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
               data-astro-prefetch="hover"
             >
               COLECCIONES
             </summary>
             <ul class="p-2">
-              <li class="text-black hover:text-primary"><a>BOX LAMP</a></li>
-              <li class="text-black hover:text-primary"><a>ENSAMBLE</a></li>
-              <li class="text-black hover:text-primary"><a>BANCO</a></li>
+              <li><a class="text-black hover:text-primary">BOX LAMP</a></li>
+              <li><a class="text-black hover:text-primary">ENSAMBLE</a></li>
+              <li><a class="text-black hover:text-primary">BANCO</a></li>
             </ul>
           </details>
         </li>
         <li class="flex items-end h-full">
-          <!-- Contenedor especial para el botón -->
           <a
             href="/contacto"
-            class="ml-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+            class={`ml-4 px-4 py-2 rounded-lg transition-colors ${currentPath === '/contacto' ? 'bg-primary text-white' : 'bg-primary/90 text-white hover:bg-primary'}`}
           >
             CONTACTO
           </a>
