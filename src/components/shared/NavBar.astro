@@ -1,135 +1,156 @@
 ---
 const currentPath = Astro.url.pathname;
+const isCollectionPage = currentPath.startsWith('/colecciones');
 ---
 
-<section class="w-full mx-auto px-16 py-12">
-  <div class="navbar sticky z-50 min-h-[4.5rem]">
-    <!-- Altura mínima fija -->
-    <div class="navbar-start h-full">
-      <!-- Altura completa -->
-      <!-- Logo (enlace a inicio) -->
-      <a
-        href="/"
-        class="flex-shrink-0 h-full flex items-end"
-        aria-label="Ir al inicio"
-      >
-        <img
-          src="/dwallLogo.png"
-          alt="Dwall - Diseño y Arquitectura"
-          class="w-40 h-auto md:w-48 pb-1"
-          width="190"
-          height="40"
-          loading="lazy"
-        />
-      </a>
-    </div>
-    <div class="navbar-end hidden md:flex h-full">
-      <!-- Altura completa -->
-      <ul class="menu menu-lg menu-horizontal px-1 gap-2 items-end h-full">
-        <li>
-          <a
-            href="/"
-            class={`pb-1 transition-colors ${currentPath === '/' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
-            data-astro-prefetch="hover"
-          >
-            INICIO
-          </a>
-        </li>
-        <li>
-          <a
-            href="/nosotros"
-            class={`pb-1 transition-colors ${currentPath === '/nosotros' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
-            data-astro-prefetch="hover"
-          >
-            NOSOTROS
-          </a>
-        </li>
-        <li>
-          <details>
-            <summary
-              class={`pb-1 transition-colors ${currentPath.startsWith('/colecciones') ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
-              data-astro-prefetch="hover"
-            >
-              COLECCIONES
-            </summary>
-            <ul class="p-2">
-              <li><a class="text-black hover:text-primary">BOX LAMP</a></li>
-              <li><a class="text-black hover:text-primary">ENSAMBLE</a></li>
-              <li><a class="text-black hover:text-primary">BANCO</a></li>
-            </ul>
-          </details>
-        </li>
-        <li class="flex items-end h-full">
-          <a
-            href="/contacto"
-            class={`ml-4 px-4 py-2 rounded-lg transition-colors ${currentPath === '/contacto' ? 'bg-primary text-white' : 'bg-primary/90 text-white hover:bg-primary'}`}
-          >
-            CONTACTO
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- Menú móvil (se mantiene igual) -->
-    <div class="navbar-end md:hidden">
-      <div class="dropdown dropdown-bottom dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost p-2 text-primary">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow space-y-3"
+<section class=`w-full ${isCollectionPage ? 'bg-primary' : ''}`>
+  <div class="max-w-screen-xl mx-auto py-12">
+    <div class="navbar sticky z-50 min-h-[4.5rem]">
+      <!-- Altura mínima fija -->
+      <div class="navbar-start h-full">
+        <!-- Altura completa -->
+        <!-- Logo (enlace a inicio) -->
+        <a
+          href="/"
+          class="flex-shrink-0 h-full flex items-end"
+          aria-label="Ir al inicio"
         >
-          <!-- Ítems del menú móvil... -->
-          <!-- Alineado al fondo -->
-          <li class="flex items-center h-full">
+          <img
+            src={isCollectionPage ? '/dwallLogoBlanco.png' : '/dwallLogo.png'}
+            alt="Dwall - Diseño y Arquitectura"
+            class="w-40 h-auto md:w-48 pb-1"
+            width="190"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <div class="navbar-end hidden md:flex h-full">
+        <!-- Altura completa -->
+        <ul class="menu menu-lg menu-horizontal px-1 gap-2 items-end h-full">
+          <li>
             <a
               href="/"
-              class="text-primary font-medium hover:text-primary/80 transition-colors pb-1"
+              class={`pb-1 transition-colors ${currentPath === '/' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
               data-astro-prefetch="hover"
             >
               INICIO
             </a>
           </li>
-          <li class="flex items-center h-full">
+          <li>
             <a
               href="/nosotros"
-              class="text-black hover:text-primary transition-colors pb-1"
+              class={`pb-1 transition-colors ${currentPath === '/nosotros' ? 'text-primary font-medium' : 'text-black hover:text-primary'}`}
               data-astro-prefetch="hover"
             >
               NOSOTROS
             </a>
           </li>
-          <li class="flex items-center h-full">
+          <li>
             <details>
               <summary
-                class="text-black hover:text-primary transition-colors pb-1"
+                class={`pb-1 transition-colors ${isCollectionPage ? 'text-white font-medium' : 'text-black hover:text-primary'}`}
                 data-astro-prefetch="hover"
               >
                 COLECCIONES
               </summary>
               <ul class="p-2">
-                <li class="text-black hover:text-primary"><a>BOX LAMP</a></li>
-                <li class="text-black hover:text-primary"><a>ENSAMBLE</a></li>
-                <li class="text-black hover:text-primary"><a>BANCO</a></li>
+                <li>
+                  <a
+                    href="/colecciones/boxlamp"
+                    class="text-black hover:text-primary">BOX LAMP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/colecciones/ensamble"
+                    class="text-black hover:text-primary">ENSAMBLE</a
+                  >
+                </li>
+                <li><a class="text-black hover:text-primary">BANCO</a></li>
               </ul>
             </details>
           </li>
-          <li class="flex items-center h-full">
-            <!-- Contenedor especial para el botón -->
+          <li class="flex items-end h-full">
             <a
               href="/contacto"
-              class="bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+              class={`ml-4 px-4 py-2 rounded-lg transition-colors ${isCollectionPage ? 'bg-white text-primary' : 'bg-primary/90 text-white hover:bg-primary'}`}
             >
               CONTACTO
             </a>
           </li>
         </ul>
+      </div>
+      <!-- Menú móvil (se mantiene igual) -->
+      <div class="navbar-end md:hidden">
+        <div class="dropdown dropdown-bottom dropdown-end">
+          <div
+            tabindex="0"
+            role="button"
+            class={`btn btn-ghost p-2 ${isCollectionPage ? 'text-white' : 'text-primary'}`}
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow space-y-3"
+          >
+            <!-- Ítems del menú móvil... -->
+            <!-- Alineado al fondo -->
+            <li class="flex items-center h-full">
+              <a
+                href="/"
+                class="text-primary font-medium hover:text-primary/80 transition-colors pb-1"
+                data-astro-prefetch="hover"
+              >
+                INICIO
+              </a>
+            </li>
+            <li class="flex items-center h-full">
+              <a
+                href="/nosotros"
+                class="text-black hover:text-primary transition-colors pb-1"
+                data-astro-prefetch="hover"
+              >
+                NOSOTROS
+              </a>
+            </li>
+            <li class="flex items-center h-full">
+              <details>
+                <summary
+                  class="text-black hover:text-primary transition-colors pb-1"
+                  data-astro-prefetch="hover"
+                >
+                  COLECCIONES
+                </summary>
+                <ul class="p-2">
+                  <li class="text-black hover:text-primary">
+                    <a href="/colecciones/boxlamp">BOX LAMP</a>
+                  </li>
+                  <li class="text-black hover:text-primary">
+                    <a href="/colecciones/ensamble">ENSAMBLE</a>
+                  </li>
+                  <li class="text-black hover:text-primary"><a>BANCO</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="flex items-center h-full">
+              <!-- Contenedor especial para el botón -->
+              <a
+                href="/contacto"
+                class="bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                CONTACTO
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

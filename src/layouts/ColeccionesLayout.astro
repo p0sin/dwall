@@ -1,0 +1,14 @@
+---
+import Hero from '../components/colecciones/Hero.astro';
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+  <Hero
+    title={frontmatter.title}
+    description={frontmatter.description}
+    image={frontmatter.image}
+  />
+</Layout>
