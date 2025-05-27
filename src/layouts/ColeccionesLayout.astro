@@ -1,5 +1,7 @@
 ---
 import Hero from '../components/colecciones/Hero.astro';
+import HeroWithGallery from '../components/colecciones/HeroWithGallery.astro';
+import Sizes from '../components/colecciones/Sizes.astro';
 import Layout from './Layout.astro';
 
 const { frontmatter } = Astro.props;
@@ -11,4 +13,6 @@ const { frontmatter } = Astro.props;
     description={frontmatter.description}
     image={frontmatter.image}
   />
+  <HeroWithGallery info={frontmatter.info} gallery={frontmatter.gallery} />
+  <Sizes sizes={frontmatter.sizes} />
 </Layout>
