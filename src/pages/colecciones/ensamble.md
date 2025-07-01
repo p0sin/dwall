@@ -5,10 +5,13 @@ description: 'LAS MESAS ENSAMBLE ESTÁN FABRICADAS CON ENSAMBLAJES SIMPLES, LO Q
 image: '/colecciones/ensamble.png'
 gallery:
   [
-    'https://placehold.co/600x400?text=Hello+World',
-    'https://placehold.co/600x400?text=Hello+World!',
-    'https://placehold.co/600x400?text=Hello+World!!',
+    '/colecciones/ensamble/carrusel/ensamble_1.webp',
+    '/colecciones/ensamble/carrusel/ensamble_2.webp',
+    '/colecciones/ensamble/carrusel/ensamble_3.webp',
   ]
-informacion: 'ES UNA CAJA CON UNA SEPARACIÓN ANGULAR QUE PERMITE COLOCAR DOS FOCOS: UNO ADELANTE, APUNTANDO HACIA ABAJO, Y OTRO DETRÁS, APUNTANDO HACIA ARRIBA. CADA UNO TIENE UN BOTÓN INDEPENDIENTE PARA AJUSTAR LA LUZ SEGÚN EL AMBIENTE QUE SE DESEE CREAR. LA ESTRUCTURA SE ENSAMBLA CON MADERA DE 10 MM DE ESPESOR, UTILIZANDO ESPIGAS Y ESCOPLOS, TODOS CORTADOS CON PRECISIÓN EN UN ROUTER CNC. EL CABLEADO ESTÁ DISEÑADO DE MANERA QUE EL FOCO SE PUEDA CAMBIAR DE FORMA SENCILLA, GRACIAS A CONECTORES RÁPIDOS, SIN NECESIDAD DE DESMONTAR NI ABRIR LA CAJA.'
+info:
+  - 'Esta pieza está compuesta por una caja con una separación angular que permite colocar dos focos: uno al frente, dirigido hacia abajo, y otro en la parte trasera, apuntando hacia arriba. Cada foco cuenta con un botón independiente para ajustar la luz según el ambiente que se quiera crear.'
+  - 'La estructura se ensambla con madera de 10 mm de espesor, utilizando espigas y escoplos cortados con precisión en un router CNC.'
+  - 'El sistema de cableado está diseñado para facilitar el cambio de focos mediante conectores rápidos, sin necesidad de desmontar o abrir la caja.'
 sizes: './ensamble/tamaños.png'
 ---
