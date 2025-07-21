@@ -13,4 +13,5 @@ info:
   - 'La estructura se ensambla con madera de 10 mm de espesor, utilizando espigas y escoplos cortados con precisión en un router CNC.'
   - 'El sistema de cableado está diseñado para facilitar el cambio de focos mediante conectores rápidos, sin necesidad de desmontar o abrir la caja.'
 sizes: './boxlamp/tamaños.png'
+sizes_img: '/colecciones/boxlamp/carrusel-vertical/boxlamp_v_2.webp'
 ---

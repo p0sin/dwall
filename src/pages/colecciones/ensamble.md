@@ -10,8 +10,8 @@ gallery:
     '/colecciones/ensamble/carrusel/ensamble_3.webp',
   ]
 info:
-  - 'Esta pieza está compuesta por una caja con una separación angular que permite colocar dos focos: uno al frente, dirigido hacia abajo, y otro en la parte trasera, apuntando hacia arriba. Cada foco cuenta con un botón independiente para ajustar la luz según el ambiente que se quiera crear.'
-  - 'La estructura se ensambla con madera de 10 mm de espesor, utilizando espigas y escoplos cortados con precisión en un router CNC.'
-  - 'El sistema de cableado está diseñado para facilitar el cambio de focos mediante conectores rápidos, sin necesidad de desmontar o abrir la caja.'
+  - 'El modelo actual cuenta con 2 travesaños redondos que mantienen la cubierta en su lugar, 4 patas que sostienen en medio un pequeño tablero y 2 cubiertas de madera.'
+  - 'Nos gusto tanto la apariencia del ensamble y su practicidad que se escaló el diseño a buros, libreros y bancas.'
 sizes: './ensamble/tamaños.png'
+sizes_img: './ensamble/vertical/mesa_ensamble_vertical.webp'
 ---

@@ -1,14 +1,17 @@
 ---
 layout: ../../layouts/ColeccionesLayout.astro
 title: 'BANCO'
-description: 'LA LÁMPARA NACE DE UNA NECESIDAD COMPARTIDA, TENER UNA FUENTE DE LUZ FUNCIONAL Y DECORATIVA. UN PRODUCTO ESTÉTICO QUE AYUDA A LEER O REALIZAR TAREAS QUE REQUIEREN UN FOCO DE LUZ CONCENTRADA EN UN ESPACIO ESPECÍFICO, QUE TAMBIÉN ILUMINA EL AMBIENTE DE MANERA INDIRECTA. TENEMOS DOS DISTINTOS TAMAÑOS, LA VERSIÓN ESCRITORIO Y LA VERSIÓN TÓTEM.'
-image: '/colecciones/banco.png'
+description: 'MESA AUXILIAR APILABLE Y ELEGANTE, DISEÑADA CON EL MÍNIMO MATERIAL Y PEGAMENTO, UTILIZANDO JUNTAS MECÁNICAS FÁCILES DE ENSAMBLAR Y DESMONTAR PARA FACILITAR SU MANTENIMIENTO. PENSADA PARA COLOCAR BEBIDAS U OBJETOS QUE ESTORBEN EN LA MESA DE JUEGO, Y QUE PUEDA APILARSE FÁCILMENTE PARA UN ALMACENAMIENTO PRÁCTICO.'
+image: '/colecciones/ensamble.png'
 gallery:
   [
     'https://placehold.co/600x400?text=Hello+World',
     'https://placehold.co/600x400?text=Hello+World!',
     'https://placehold.co/600x400?text=Hello+World!!',
   ]
-informacion: 'ES UNA CAJA CON UNA SEPARACIÓN ANGULAR QUE PERMITE COLOCAR DOS FOCOS: UNO ADELANTE, APUNTANDO HACIA ABAJO, Y OTRO DETRÁS, APUNTANDO HACIA ARRIBA. CADA UNO TIENE UN BOTÓN INDEPENDIENTE PARA AJUSTAR LA LUZ SEGÚN EL AMBIENTE QUE SE DESEE CREAR. LA ESTRUCTURA SE ENSAMBLA CON MADERA DE 10 MM DE ESPESOR, UTILIZANDO ESPIGAS Y ESCOPLOS, TODOS CORTADOS CON PRECISIÓN EN UN ROUTER CNC. EL CABLEADO ESTÁ DISEÑADO DE MANERA QUE EL FOCO SE PUEDA CAMBIAR DE FORMA SENCILLA, GRACIAS A CONECTORES RÁPIDOS, SIN NECESIDAD DE DESMONTAR NI ABRIR LA CAJA.'
+info:
+  - 'Durante la fase de prototipado descubrimos que el diseño tiene potencial multifuncional. Con pequeños ajustes puede convertirse fácilmente en un banco; con modificaciones adicionales, puede transformarse en una periquera, una mesa de centro o incluso un mueble de cocina.'
+  - 'El proceso de fabricación es simple: se cortan cuatro patas, dos travesaños y una cubierta. Todas las piezas se boleán, se lijan y se ensamblan. Finalmente, se aseguran con pernos de madera, logrando una estructura estable y resistente.'
 sizes: ''
+sizes_img: './banco/banco_vertical.webp'
 ---

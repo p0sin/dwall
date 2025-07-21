@@ -1,5 +1,5 @@
 ---
-const { sizes, image2 } = Astro.props;
+const { sizes, sizes_img } = Astro.props;
 ---
 
 <section
@@ -43,7 +43,7 @@ const { sizes, image2 } = Astro.props;
       <!-- Second Image - 1/3 width -->
       <div class="w-full lg:w-1/3 flex justify-center">
         <img
-          src="/colecciones/boxlamp/carrusel-vertical/boxlamp_v_2.webp"
+          src={sizes_img}
           alt="Imagen adicional"
           class="w-full max-w-[350px] h-auto object-contain rounded-xl shadow-lg"
         />

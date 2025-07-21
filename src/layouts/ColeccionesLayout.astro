@@ -14,5 +14,5 @@ const { frontmatter } = Astro.props;
     image={frontmatter.image}
   />
   <HeroWithGallery info={frontmatter.info} gallery={frontmatter.gallery} />
-  <Sizes sizes={frontmatter.sizes} />
+  <Sizes sizes={frontmatter.sizes} sizes_img={frontmatter.sizes_img} />
 </Layout>
