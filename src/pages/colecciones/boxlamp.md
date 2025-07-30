@@ -2,7 +2,7 @@
 layout: ../../layouts/ColeccionesLayout.astro
 title: 'BOX LAMP'
 description: 'LA LÁMPARA NACE DE UNA NECESIDAD COMPARTIDA, TENER UNA FUENTE DE LUZ FUNCIONAL Y DECORATIVA. UN PRODUCTO ESTÉTICO QUE AYUDA A LEER O REALIZAR TAREAS QUE REQUIEREN UN FOCO DE LUZ CONCENTRADA EN UN ESPACIO ESPECÍFICO, QUE TAMBIÉN ILUMINA EL AMBIENTE DE MANERA INDIRECTA. <br /> <br /> TENEMOS DOS DISTINTOS TAMAÑOS, LA VERSIÓN ESCRITORIO Y LA VERSIÓN TÓTEM.'
-image: '/colecciones/boxlamp.png'
+image: '/colecciones/boxlamp/portada-boxlamp.png'
 gallery:
   [
     '/colecciones/boxlamp/carrusel/boxlamp_1.webp',

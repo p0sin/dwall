@@ -2,7 +2,7 @@
 layout: ../../layouts/ColeccionesLayout.astro
 title: 'BANCO'
 description: 'MESA AUXILIAR APILABLE Y ELEGANTE, DISEÑADA CON EL MÍNIMO MATERIAL Y PEGAMENTO, UTILIZANDO JUNTAS MECÁNICAS FÁCILES DE ENSAMBLAR Y DESMONTAR PARA FACILITAR SU MANTENIMIENTO. PENSADA PARA COLOCAR BEBIDAS U OBJETOS QUE ESTORBEN EN LA MESA DE JUEGO, Y QUE PUEDA APILARSE FÁCILMENTE PARA UN ALMACENAMIENTO PRÁCTICO.'
-image: '/colecciones/ensamble.png'
+image: '/colecciones/banco/portada-banco.png'
 gallery:
   [
     'https://placehold.co/600x400?text=Hello+World',

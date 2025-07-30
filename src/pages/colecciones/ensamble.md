@@ -2,7 +2,7 @@
 layout: ../../layouts/ColeccionesLayout.astro
 title: 'ENSAMBLE'
 description: 'LAS MESAS ENSAMBLE ESTÁN FABRICADAS CON ENSAMBLAJES SIMPLES, LO QUE PERMITE UN EMPAQUE LO MÁS COMPACTO POSIBLE. SE ELABORAN CON LA MADERA DISPONIBLE EN EL TALLER EN ESE MOMENTO, LO QUE CONTRIBUYE A REDUCIR AL MÁXIMO LOS DESPERDICIOS Y RESIDUOS DE MATERIAL.'
-image: '/colecciones/ensamble.png'
+image: '/colecciones/ensamble/portada-ensamble.png'
 gallery:
   [
     '/colecciones/ensamble/carrusel/ensamble_1.webp',
