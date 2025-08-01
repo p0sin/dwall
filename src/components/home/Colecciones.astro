@@ -3,14 +3,17 @@ const COLECCIONES = [
   {
     nombre: 'BOX LAMP',
     imagen: '/colecciones/boxlamp.svg',
+    url: '/colecciones/boxlamp',
   },
   {
     nombre: 'ENSAMBLE',
     imagen: '/colecciones/ensamble.svg',
+    url: '/colecciones/ensamble',
   },
   {
     nombre: 'BANCOS',
     imagen: '/colecciones/banco.svg',
+    url: '/colecciones/banco',
   },
 ];
 ---
@@ -38,7 +41,11 @@ const COLECCIONES = [
                 class="max-w-full max-h-full w-auto h-auto object-contain"
               />
             </div>
-            <p class="text-lg md:text-2xl mb-8 md:mb-12">INFORMACIÓN</p>
+            <div class="text-lg md:text-2xl mb-8 md:mb-12">
+              <a href={coleccion.url} class="hover:text-primary">
+                INFORMACIÓN
+              </a>
+            </div>
           </div>
         ))
       }
