@@ -13,6 +13,7 @@ const { info, gallery } = Astro.props;
           class="mySwiper w-full max-w-[600px] aspect-[3/2] bg-neutral-200 rounded-lg shadow overflow-hidden"
           pagination-clickable="true"
           pagination-dynamic-bullets="true"
+          autoplay-delay="2500"
         >
           {
             gallery.map((image: string, index: number) => (

@@ -25,20 +25,3 @@
     @apply w-full h-full flex items-center justify-center text-black rounded-xl;
   }
 }
-
-/* Estilos para las flechas del Swiper */
-swiper-container .swiper-button-next,
-swiper-container .swiper-button-prev {
-  color: white !important;
-}
-
-swiper-container .swiper-button-next::after,
-swiper-container .swiper-button-prev::after {
-  color: white !important;
-  font-size: 24px !important;
-}
-
-swiper-container .swiper-button-next:hover,
-swiper-container .swiper-button-prev:hover {
-  color: #f3f4f6 !important;
-}
