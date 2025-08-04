@@ -5,10 +5,12 @@ import { register } from 'swiper/element/bundle';
 register();
 ---
 
-<section class="w-screen h-dvh">
+<section class="max-w-7xl mx-auto px-4 md:px-8 my-16">
   <swiper-container
-    class="mySwiper h-full w-full bg-neutral-400 items-center justify-center"
+    class="mySwiper h-full w-full bg-neutral-400 items-center justify-center rounded-lg"
     navigation="true"
+    autoplay-delay="2500"
+    style="--swiper-navigation-color: white; --swiper-navigation-size: 24px; --swiper-navigation-sides-offset: 25px;"
   >
     <swiper-slide class="slide"
       ><img

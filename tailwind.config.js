@@ -1,4 +1,5 @@
 import { defineConfig } from "tailwindcss";
+import daisyui from "daisyui";
 
 export default defineConfig({
   content: [
