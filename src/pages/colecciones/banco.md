@@ -8,6 +8,6 @@ gallery: ['/colecciones/banco/banco.webp']
 info:
   - 'Durante la fase de prototipado descubrimos que el diseño tiene potencial multifuncional. Con pequeños ajustes puede convertirse fácilmente en un banco; con modificaciones adicionales, puede transformarse en una periquera, una mesa de centro o incluso un mueble de cocina.'
   - 'El proceso de fabricación es simple: se cortan cuatro patas, dos travesaños y una cubierta. Todas las piezas se boleán, se lijan y se ensamblan. Finalmente, se aseguran con pernos de madera, logrando una estructura estable y resistente.'
-sizes: ''
+sizes: './banco/tamaños.png'
 sizes_img: './banco/banco_vertical.webp'
 ---
